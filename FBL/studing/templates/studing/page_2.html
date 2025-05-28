@@ -1,0 +1,19 @@
+{% extends 'studing/pattern.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'studing/css/pattern_main.css' %}">
+{% endblock %}
+
+{% block content %}
+<p class="content">Вы можете пройти наше обучение, которое быстро введет Вас в принципы работы и
+взаимодействия с нашим приложением!
+
+Если же Вы не испытываете потребности в обучении, то
+Вы можете пропустить этот этап и перейти сразу к “дефолтной” версии приложения</p>
+{% endblock %}
+
+{% block button %}
+<a href="{% url 'page_1' %}" class="btn btn-warning end">Назад</a>
+<a href="{% url 'page_3' %}" class="btn btn-warning">Далее</a>
+{% endblock %}

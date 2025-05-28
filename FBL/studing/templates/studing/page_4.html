@@ -1,0 +1,21 @@
+{% extends 'studing/pattern.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'studing/css/pattern_main.css' %}">
+{% endblock %}
+
+{% block content %}
+<p class="content">Основные функции для Вашего дела:<br>
+- Онлайн бухгалтерия<br>
+- Онлайн статистика<br>
+- Найм персонала<br>
+- Счёт/баланс Вашего предприятия<br>
+- Календарь событий</p>
+
+{% endblock %}
+
+{% block button %}
+<a href="{% url 'page_3' %}" class="btn btn-warning end">Назад</a>
+<a href="{% url 'page_5' %}" class="btn btn-warning">Далее</a>
+{% endblock %}

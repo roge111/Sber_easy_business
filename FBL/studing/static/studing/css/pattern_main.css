@@ -1,0 +1,130 @@
+body{
+    background-image: url('../img/Обучалка.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center
+}
+
+.text-box {
+        margin-top: 40px;
+        margin-left: 5%;
+        color: black;
+        justify-content: center; 
+        background-color: rgba(255, 255, 255, 0.7); /* Белый с прозрачностью 70% */
+        border-radius: 40px; /* Закругление углов */
+        padding: 30px; /* Отступы внутри блока */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+        text-align: center; /* Центрирование текста */
+        max-width: 80%; /* Ширина блока */
+        font-size: 10em;
+
+
+         opacity: 0;
+        transform: translateY(30px); /* Начальное смещение вниз */
+        animation: textFadeIn 1.5s ease-out 0.5s forwards;
+         
+    }
+.form-input {
+    display: block;
+    width: 80%;
+    margin: 30px auto; /* Центрирование и отступы */
+    margin-top: 15%;
+    padding: 20px 25px;
+    font-size: 1.5em;
+    border: 2px solid #ffc107;
+    border-radius: 40px; /* Стиль как у .content */
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+    z-index: 3;
+
+    opacity: 0;
+    transform: translateY(30px); /* Начальное смещение вниз */
+    animation: textFadeIn 4s ease-out 0.5s forwards;
+}
+.btn.btn-warning.giga{
+        position: fixed; /* или absolute, если родитель имеет position: relative */
+    right: 40%;     /* Отступ от правого края страницы */
+    top: 80%;       /* Отступ от верхнего края страницы */
+    padding: 20px 40px;
+    font-size: 22px;
+    border-radius: 8px;
+    background-color: #22fb00;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;  /* Чтобы кнопка была поверх других элементов */
+    /* Убираем float и margin */
+    float: none;
+    margin: 0;
+
+}
+
+.content {
+        margin-top: 40px;
+        margin-left: 5%;
+        justify-content: center; 
+        color: #000000;
+        background-color: rgba(255, 255, 255, 0.7); /* Белый с прозрачностью 70% */
+        border-radius: 40px; /* Закругление углов */
+        padding: 30px; /* Отступы внутри блока */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+        text-align: center; /* Центрирование текста */
+        max-width: 80%; /* Ширина блока */
+        font-size: 2em;
+
+
+         opacity: 0;
+        transform: translateY(30px); /* Начальное смещение вниз */
+        animation: textFadeIn 1.5s ease-out 0.5s forwards; 
+
+}
+
+
+
+
+@keyframes textFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.btn.btn-warning {
+    position: fixed; /* или absolute, если родитель имеет position: relative */
+    right: 10%;     /* Отступ от правого края страницы */
+    top: 80%;       /* Отступ от верхнего края страницы */
+    padding: 20px 40px;
+    font-size: 22px;
+    border-radius: 8px;
+    background-color: #ffc107;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;  /* Чтобы кнопка была поверх других элементов */
+    /* Убираем float и margin */
+    float: none;
+    margin: 0;
+}
+
+.btn.btn-warning.end {
+
+    position: fixed; /* или absolute, если родитель имеет position: relative */
+    right: 85%;     /* Отступ от правого края страницы */
+    top: 80%;       /* Отступ от верхнего края страницы */
+    padding: 20px 40px;
+    font-size: 22px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;  /* Чтобы кнопка была поверх других элементов */
+    /* Убираем float и margin */
+    float: none;
+    margin: 0;
+        }

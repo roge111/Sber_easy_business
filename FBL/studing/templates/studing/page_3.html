@@ -1,0 +1,22 @@
+{% extends 'studing/pattern.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'studing/css/page_3.css' %}">
+{% endblock %}
+
+{% block content %}
+<p class="text-box">Наше приложение адаптивно и позволяет создавать удобное пространство. Вы можете настроить вкладки, функции и виджеты по своему усмотрению.</p>
+<p class="content">Укажите, каким бизнесом Вы занимаетесь ?</p>
+{% endblock %}
+
+{% block button %}
+<a href="{% url 'page_2' %}" class="btn btn-warning end">Назад</a>
+<a href="{% url 'page_4' %}" class="btn btn-warning">Далее</a>
+{% endblock %}
+
+{% block input %}
+
+<input type="text" class="form-input" placeholder="Введите запрос">
+
+{% endblock %}

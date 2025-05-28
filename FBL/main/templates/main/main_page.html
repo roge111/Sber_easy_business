@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-...ваш_код..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'main/css/main_page.css' %}">
+    <title>СберБизнес</title>
+</head>
+<body>
+    <div class="vidjet">
+        <p>+</p>
+    </div>
+    <i class="fa-solid fa-trash"></i>
+    
+    <div class="head">
+        
+    </div>
+    <div class="screen-divider"></div>
+    <div class="widgets-container">
+        <div class="accounting-block"><i class="fa-solid fa-calculator"></i> Моя бухгалтерия</div>
+    <div class="calendar-block"><i class="fa-solid fa-calendar"></i> Мой календарь</div>
+
+    </div>
+
+
+
+    <a href="https://giga.chat/" class="image-button" target="_blank">
+        <img src="{% static 'main/img/gig.png' %}" alt="Кнопка">
+    </a>
+
+    <i class="fa-solid fa-compass"></i>
+    
+
+    <aside>
+        <img src = "{% static 'main/img/SberLogo.png' %}" alt="Лого" id="Logo">
+        <ul>
+            <a class="my_bisnes"><li>Мой бизнес</li></a>
+            <a href=""></a>
+            <a href=""></a>
+        </ul>
+
+    </aside>
+
+    <input type="text" class="form-input" placeholder="Поиск с GigaChat">
+    <p class="info"> Сюда добавляются виджеты </p>
+</body>
+</html>
